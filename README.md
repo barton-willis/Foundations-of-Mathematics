@@ -5,7 +5,7 @@ This course covers sets, functions, and logic. And we'll learn the basic proof t
 
 Our textbook is _Introduction to Mathematical Structures and Proofs_ (second edition) by Larry Gerstein. 
 
-### License
+## License
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
