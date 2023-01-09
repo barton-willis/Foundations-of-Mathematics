@@ -6,11 +6,8 @@
 \usepackage{xcolor}
 \usepackage[super]{nth}
 \usepackage[paperwidth=8.5in,paperheight=11in,margin=0.45in]{geometry} 
-\usepackage[UKenglish]{babel}
-\usepackage[UKenglish]{isodate}% http://ctan.org/pkg/isodate
-\usepackage{hyperref}
-\usepackage[UKenglish]{babel}
-\usepackage[UKenglish]{isodate}% http://ctan.org/pkg/isodate
+\usepackage[USenglish]{babel}
+\usepackage[USenglish]{isodate}% http://ctan.org/pkg/isodate
 \usepackage{hyperref}
 \hypersetup{
   colorlinks   = true, %Colours links instead of ugly boxes
@@ -109,7 +106,7 @@ Exam \theex}
 
 \begin{center}
 \begin{description}
-    \item[Instructor:] Dr.\  Willis, Professor of Mathematics
+    \item[Instructor:] Barton Willis, PhD, Professor of Mathematics
     \item[Office:]  Discovery Hall, Room 368
     \item[\phone:]   \phonenumber[country=US]{3088658868}
     \item[\Email:]    \href{mailto:willisb@unk.edu}{willisb@unk.edu}
@@ -136,11 +133,11 @@ account on Overleaf (\url{https://www.overleaf.com/}).   For  tutorial for using
 
 \begin{mypar}{0.25in}{0.25in} 
 
-      \textbf{First Homework due} \dotfill  \printdate{28/1/\the\year}  \\
-       \textbf{Exam 1} \dotfill \printdate{17/2/\the\year}  \\
-    \textbf{Exam 2} \dotfill  \printdate{2/3/\the\year} \\
-    \textbf{Exam 3} \dotfill \printdate{14/4/\the\year} \\
-      \textbf{Final exam} \dotfill  \printdate{15/5/\the\year} 3:30 \PM  --  5:30 \PM
+      \textbf{First Homework due} \dotfill  \textbf{\printdate{28/1/\the\year}}  \\
+       \textbf{Exam 1} \dotfill \textbf{\printdate{17/2/\the\year}}  \\
+    \textbf{Exam 2} \dotfill  \textbf{\printdate{2/3/\the\year}} \\
+    \textbf{Exam 3} \dotfill \textbf{\printdate{14/4/\the\year}} \\
+      \textbf{Final exam} \dotfill  \textbf{\printdate{15/5/\the\year} 3:30 \PM  --  5:30 \PM}
 \end{mypar}
 
 
@@ -150,15 +147,15 @@ account on Overleaf (\url{https://www.overleaf.com/}).   For  tutorial for using
 Your course grade will be based on weekly homework sets, three midterm exams, and a comprehensive 
 final exam; specifically:
 \begin{mypar}{0.25in}{0.25in}
-    \textbf{Weekly Homework:}  \emph{12 ten point assignments}  \dotfill 120 (total) \\
+    \textbf{Weekly Homework:}  \emph{12 fifteen point assignments}  \dotfill 180 (total) \\
     \textbf{Mid-term exams 1,2, and 3:} \emph{100 points each} \dotfill 300 (total)\\
       \textbf{Comprehensive Final exam} \dotfill 150 (total)
 \end{mypar}
 If it is necessary to adjust the number of  homework assignments,  your homework point 
-total will be scaled to a total of 120.  For example, if we have only eleven homework sets, your homework score will
-be scaled by a factor of \(120/110\).
+total will be scaled to a total of 120.  For example, if we have only eleven homework sets, 
+your homework score will be scaled by a factor of \(180/165\).
 
-\FPeval{\points}{round(120+300+150,0)}
+\FPeval{\points}{round(180+300+150,0)}
 
 \FPeval{\F}{round(\points*0.6-1,0)}
 \FPeval{\Dm}{round(\points*0.6,0)}
@@ -212,7 +209,7 @@ The prerequisite for MATH 250 is an earned grade of D- or higher in either MATH 
 
 \subsubsection*{Catalog description}
 
-\textbf{Foundations of Mathematics  (3 credit hours)} Topics of sets and symbolic logic are studied with the objective of using them in the detailed study of the nature of different types of proofs used in mathematics. Also, the processes of problem solving are studied for developing strategies of problem solving.
+\textbf{Foundations of Mathematics (3 credit hours)} Topics of sets and symbolic logic are studied with the objective of using them in the detailed study of the nature of different types of proofs used in mathematics. Also, the processes of problem solving are studied for developing strategies of problem solving.
 
 \subsubsection*{Learning Outcomes}
 
@@ -284,9 +281,11 @@ Unless an assessment is \emph{explicitly} stated to be a group project,  \emph{a
 \end{quote}
  If two assignments are so similar that only collaboration could explain their similarities, both assignments will receive a grade of zero.  Using unauthorized materials or communication devices (cell phone, for
 example) while taking a test will earn you a grade of zero on that assessment.  
-For the university academic integrity policy, please read the footnote.{\small  \url{https://catalog.unk.edu/undergraduate/academics/academic-regulations/academic-integrity-policy/}
+For the university academic integrity policy, please read
+\small \url{https://catalog.unk.edu/undergraduate/academics/academic-regulations/academic-integrity-policy/}
  
-
+\normalsize
+Specially, our course policies are:
 \begin{enumerate}
 
 \item Regular in person class attendance is required. If you are ill or need to miss 
@@ -371,11 +370,36 @@ It is the policy of the University of Nebraska at Kearney to provide flexible an
 
 \subsubsection*{Students Who are Pregnant}
 
-It is the policy of the University of Nebraska at Kearney to provide flexible and individualized reasonable accommodation to students who are pregnant. To receive accommodation services due to pregnancy, students must contact the Student Health office at \phonenumber[country=US]{3088658218}. The following links provide information for students and faculty regarding pregnancy rights\footnote{\small  \url{https://thepregnantscholar.org/title-ix-basics/}, \url{https://nwlc.org/resource/faq-pregnant-and-parenting-college-graduate-students-rights/UNK Statement of Diversity & Inclusion}}
+It is the policy of the University of Nebraska at Kearney to provide flexible 
+and individualized reasonable accommodation to students who are pregnant. 
+To receive accommodation services due to pregnancy, students must contact 
+the Student Health office at \phonenumber[country=US]{3088658218}. The following 
+links provide information for students and faculty regarding pregnancy 
+rights:
+\small
+\begin{enumerate}
+  \item \url{https://thepregnantscholar.org/title-ix-basics/}
+  \item \url{https://nwlc.org/resource/faq-pregnant-and-parenting-college-
+  graduate-students-rights/UNK Statement of Diversity & Inclusion}
+\end{enumerate}
+\normalsize
 
 \subsubsection*{UNK Statement of Diversity \& Inclusion}
 
-UNK stands in solidarity and unity with our students of color, our Latinx and international students, our LGBTQIA+ students and students from other marginalized groups in opposition to racism and prejudice in any form, wherever it may exist. It is the job of institutions of higher education, indeed their duty, to provide a haven for the safe and meaningful exchange of ideas and to support peaceful disagreement and discussion. In our classes, we strive to maintain a positive learning environment based upon open communication and mutual respect. UNK does not discriminate on the basis of race, color, national origin, age, religion, sex, gender, sexual orientation, disability or political affiliation. Respect for the diversity of our backgrounds and varied life experiences is essential to learning from our similarities as well as our differences. The following link provides resources and other information regarding D\&I:  \url{https://www.unk.edu/about/equity-access-diversity.php}
+UNK stands in solidarity and unity with our students of color, our Latinx and international students, our LGBTQIA+ students 
+and students from other marginalized groups in opposition to racism 
+and prejudice in any form, wherever it may exist. It is the job of 
+institutions of higher education, indeed their duty, to provide a 
+haven for the safe and meaningful exchange of ideas and to support 
+peaceful disagreement and discussion. In our classes, we strive to 
+maintain a positive learning environment based upon open 
+communication and mutual respect. UNK does not discriminate on the 
+basis of race, color, national origin, age, religion, sex, gender, 
+sexual orientation, disability or political affiliation. 
+Respect for the diversity of our backgrounds and varied life 
+experiences is essential to learning from our similarities as well 
+as our differences. The following link provides resources and other 
+information regarding D\&I: \url{https://www.unk.edu/about/equity-access-diversity.php}
 
 
 \end{document}
