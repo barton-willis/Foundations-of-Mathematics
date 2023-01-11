@@ -2,7 +2,7 @@
 %\documentclass[border=0.1cm]{standalone}
 \usepackage{wasysym}
 \usepackage{phonenumbers}
-\usepackage{marvosym }
+\usepackage{marvosym}
 \usepackage{xcolor}
 \usepackage[super]{nth}
 \usepackage[paperwidth=8.5in,paperheight=11in,margin=0.45in]{geometry} 
@@ -14,7 +14,7 @@
   colorlinks   = true, %Colours links instead of ugly boxes
   urlcolor     = black, %Colour for external hyperlinks
   linkcolor    = black, %Colour of internal links
-  citecolor   = black %Colour of citations
+  citecolor    = black %Colour of citations
 }
 \usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
 \frenchspacing
@@ -77,8 +77,8 @@ Exam \theex}
     \textsc{#1}%
   \fi
 }
-\newcommand\AM{\,\maybefakesc{am}\xspace}
-\newcommand\PM{\,\maybefakesc{pm}\xspace}
+\newcommand\AM{\maybefakesc{am}\xspace}
+\newcommand\PM{\maybefakesc{pm}\xspace}
 \makeatother
 
  \newcommand{\coursename}{Foundations of Mathematics}
@@ -86,7 +86,7 @@ Exam \theex}
 \newcommand{\sectionnumber}{01}
 \newcommand{\term}{Spring }
 \newcommand{\room}{Discovery Hall, room 386}
-\newcommand{\meetingtime}{This class meets Monday, Wednesday, and Friday in \room \/  from 2:30 \PM to 3:20 \PM.}
+\newcommand{\meetingtime}{This class meets Monday, Wednesday, and Friday in \room \/  from 2:30\PM to 3:20\PM.}
 \newcommand{\officehours}{Monday, Wednesday, and Friday 10:00\AM-11:00\AM,
     Tuesday and Thursday 12:00 noon-2:00\PM, and by appointment.}
 
@@ -153,8 +153,8 @@ final exam; specifically:
       \textbf{Comprehensive Final exam} \dotfill 150 (total)
 \end{mypar}
 If it is necessary to adjust the number of  homework assignments,  your homework point 
-total will be scaled to a total of 120.  For example, if we have only eleven homework sets, 
-your homework score will be scaled by a factor of \(180/165\).
+total will be scaled to a total of 165.  For example, if we have only ten homework sets, 
+your homework score will be scaled by a factor of \(165/150\).
 
 \FPeval{\points}{round(165+300+150,0)}
 
@@ -173,7 +173,7 @@ your homework score will be scaled by a factor of \(180/165\).
 
 \FPeval{\Am}{round(\points*0.9,0)}
 \FPeval{\A}{round(\points*0.93,0)}
-\FPeval{\Ap}{round(\points*0.97,0)}
+\FPeval{\Ap}{round(\points*0.98,0)}
 The following table shows the \emph{minimum} number of points (out of \points) that
 are required for each of the twelve letter grades D- through A+. For
 example, a point total of \Bp\/  points will earn you a grade of B+,  and 
@@ -251,7 +251,7 @@ When we are ahead or behind, the topics on the exams will be appropriately adjus
 {\bf Week}  & \textbf{Week Starting} &  {\bf Section(s)} & {\bf Topic(s)} & \textbf{Assessment} \\
 \hline \hline 
 \wk    &  \printdate{23/1/\the\year} &    \S 1.1, \S 1.2  &  Logical connectives; Truth tables  & \hw  \\
-\wk    & \printdate{30/1/\the\year}   &  \S1.3 &  Introduction to Overleaf, Conditional statements & \hw  \\
+\wk    & \printdate{30/1/\the\year}   &  \S1.3 &  Introduction to Overleaf; Conditional statements & \hw  \\
 \wk    & \printdate{6/2/\the\year}&     \S1.4, \S1.5  &   Proof structures;  Logical equivalence &  \hw \\
 \wk    & \printdate{13/2/\the\year}   &     \S2.1, \S2.2  & Sets; Russell's paradox   &   \textbf{\ex}       \\ \hline
 \wk    & \printdate{20/2/\the\year} &  \S2.3, \S2.4    &  Quantifiers; Set inclusion   & \hw \\ 
@@ -264,7 +264,7 @@ When we are ahead or behind, the topics on the exams will be appropriately adjus
 \wk   & \printdate{17/4/\the\year}  & \S4.1, \S4.2  &  Cardinality; Finite and infinite sets   &   \textbf{\ex}  \\ \hline
 \wk   & \printdate{24/4/\the\year} & \S4.3  &   Countable  and uncountable sets & \hw \\
 \wk   & \printdate{1/5/\the\year}    &  \S5.1, \S5.2      & Combinatorial problems; Addition and product rules  &  \hw   \\
-\wk   & \printdate{8/5/\the\year}   &  \S5.3, \S5.4      & Permutations and geometric symmetry  &      \\
+\wk   & \printdate{8/5/\the\year}   &  \S5.3, \S5.4      & Permutations; Geometric symmetry  &      \\
  \wk   & \printdate{15/5/\the\year}     &  &    \hfill  & \textbf{ Final Exam}  \\  \hline
    
 \end{tabular}
@@ -298,7 +298,7 @@ you learn missed material.
 
 \item All examinations, including the final exam, must be taken in person.
 
-\item For examinations and in class assignments, show your work.  \emph{No credit will be given for multi-step problems without the necessary work. Your solution must contain enough detail
+\item For examinations and in class assignments, show your work.  \emph{No credit will be given for multistep problems without the necessary work. Your solution must contain enough detail
 so that I am convinced that you could correctly work any similar problem.} Also erase or clearly mark any work you want me to ignore; otherwise,
 I'll grade it.  
 
@@ -309,7 +309,7 @@ these expectations.}
 
 \item Class cancellations due to weather, illness, or other 
 unplanned circumstances may require that we make  adjustments
-to the course calendar, exam dates, and due dates or specifics for 
+to the course calendar, exam dates, due dates, or specifics for 
 course assessments. 
 
 
@@ -365,8 +365,9 @@ Retaliation against the student making the report, whether by students or Univer
 
 \subsubsection*{Students with Disabilities}
 
-It is the policy of the University of Nebraska at Kearney to provide flexible and individualized reasonable accommodation to students with documented disabilities. To receive accommodation services for a disability, students must be registered with the UNK Disabilities Services for Students (DSS) office, 175 Memorial Student Affairs Building,  \phonenumber[country=US]{3088658214} or by email unkdso@unk.edu  
-
+It is the policy of the University of Nebraska at Kearney to provide flexible and individualized reasonable accommodation to students with documented disabilities. To receive accommodation services for a disability, students must be registered with the UNK Disabilities Services for Students (DSS) office, 175 Memorial Student 
+Affairs Building,  \phonenumber[country=US]{3088658214} or by 
+email \href{mailto:unkdso@unk.edu}{unkdso@unk.edu}
 
 \subsubsection*{Students Who are Pregnant}
 
@@ -403,231 +404,6 @@ information regarding D\&I: \url{https://www.unk.edu/about/equity-access-diversi
 
 \includepdf[pages={1-},angle=90]{door-schedule.pdf}
 \includepdf[pages={1-},angle=90]{foundations-of-math-quick-reference.pdf}
-
-\end{document}
-For the UNK's Policies and statements on: Attendance Policy, Academic Honesty Policy, 
-Reporting Student Sexual Harassment, Sexual Violence or Sexual Assault, Students 
-with Disabilities, Students Who are Pregnant, and UNK Statement of Diversity 
-\& Inclusion,  you \emph{must read}
-\url{https://www.unk.edu/academic_affairs/asa_forms/course-policies-and-resources.php}.
-\end{enumerate}
-%\includepdf[pages={1-},angle=90]{door_schedule.pdf}  
-%\includepdf[pages={1-},angle=90]{analysis-quick-reference.pdf} 
-\end{document}
-\subsubsection* {Policies}
-
-Unless an assessment is \emph{explicitly} stated to be a group project,  \emph{all work you turn in for a grade must be your own.}  If you need assistance in completing a homework assignment, you may ask me for help. Googling for answers, seeking help from the Learning Commons or other faculty members,  or using solution keys from previous terms (either from UNK or other universities) is also prohibited.  Violation of these rules will result in earning a grade of zero on the assessment. Further each homework assignment you turn in for a grade must include the statement:
-
-\begin{quote}
-\fbox{I have neither given nor received unauthorized assistance on this assignment.}
-\end{quote}
- If two assignments are so similar that only collaboration could explain their similarities, both assignments will receive a grade of zero.  Using unauthorized materials or communication devices (cell phone, for
-example) while taking a test will earn you a \emph{failing course grade.}  
-
-
-Examinations are closed book and closed notes; using
-unauthorized materials while taking a test will earn you a failing
-course grade.  
-
-\begin{enumerate}
-
-\item For examinations and in class assignments, show your work.  \emph{No credit will be given for multi-step problems without the necessary work. Your solution must contain enough detail
-so that I am convinced that you could correctly work any similar problem.} Also erase or clearly mark any work you want me to ignore; otherwise,
-I'll grade it.  
-
-\item The work you turn in is expected to be \emph{accurate, 
-complete, concise, neat}, and \emph{well-organized}.  
-\emph{You will not earn full credit on work that falls short of 
-these expectations.}
-
-\item Class cancellations due to weather or illness or other 
-unplanned circumstances may require that we make  adjustments
-to the course calendar, exam dates, and due dates or specifics for 
-course assessments. 
-
-
-\item Extra credit is not allowed. 
-
-%\item For online homework and in class work, you may work in groups and you may 
-%seek help from the Learning Commons. 
-
-\item For examinations, you make use a teacher provided crib sheet, 
-but no other reference materials. You may also use a pencil, eraser, 
-and a scientific calculator. For examinations, your phone and all such
-devices must be turned off and \emph{out of sight}. Checking your phone
-to look at the time is \emph{not} allowed. Using unauthorized 
-materials during an examination will earn you a failing course grade.
-
-\item Generally, if you are ill or absent for any reason (including 
-athletics), you must turn in your in class work on time. Permission to
-turn in work late must be made in advance, otherwise late in class work 
-will count zero points.
-
-
- 
-
-\item During class time, please refrain from using electronic devices. If your 
-device usage distracts your classmates, I will ask you to put it away. If it's my 
-impression that you are often not paying attention in class, I reserve the right to 
-decline to help you during office hours.
-
-\item The final examination will be \emph{comprehensive} and it will be given 
-during the 
-time scheduled by the University. Except for \emph{extraordinary circumstances}
-you must take the exam at this time.
-
-
- 
-\item If you have questions about how your work has been graded, make an appointment with me immediately.
-
-\item All printed materials, in either paper or digital form, that I 
-provide for you in this class, are for your own use. Re-posting or 
-sharing these materials with other persons is prohibited. 
-
-\item Please regularly check Canvas  to verify that your scores have 
-been recorded correctly.  If I made a mistake in recording one of
-your grades, I'll correct it provided you saved your paper.
-
-\subsubsection*{Course Objectives} 
-
-\noindent Students will learn to read and to construct \emph{direct proofs}, \emph{proofs by contradiction}, and \emph{inductive proofs}.  Students will also learn the fundamentals of \emph{boolean logic, sets, and functions}.
-
-
-
-\subsubsection*{Prerequisite}
-
-The prerequisite for MATH 250 is a grade of D- or higher in either MATH 115 or MATH 123.
-
-\subsubsection*{Students with Disabilities or Those Who are Pregnant}
-
-\paragraph{Students with Disabilities} It is the policy of the University of Nebraska 
-at Kearney to provide flexible and individualized reasonable 
-accommodation to students with documented disabilities. To receive 
-accommodation services for a disability, students must be
-registered with the UNK Disabilities Services for Students (DSS) 
-office, 175 Memorial Student Affairs Building, 
-\phonenumber[country=US]{3088658214} or 
-by email \href{mailto:unkdso@unk.edu}{unkdso@unk.edu}
-
-\paragraph{UNK Statement of Diversity \& Inclusion:} UNK stands in solidarity and unity with our students of color, our Latinx and international students, our LGBTQIA+ students and students from other marginalized groups in opposition to racism and prejudice in any form, wherever it may exist. It is the job of institutions of higher education, indeed their duty, to provide a haven for the safe and meaningful exchange of ideas and to support peaceful disagreement and discussion. In our classes, we strive to maintain a positive learning environment based upon open communication and mutual respect. UNK does not discriminate on the basis of race, color, national origin, age, religion, sex, gender, sexual orientation, disability or political affiliation. Respect for the diversity of our backgrounds and varied 
-life experiences is essential to learning from our similarities as well as our differences. The following link provides resources and other information regarding D\&I: 
-\url{https://www.unk.edu/about/equity-access-diversity.php}
-
-\paragraph{Students Who are Pregnant} It is the policy of the University of Nebraska at Kearney to provide flexible and individualized reasonable accommodation to students who are pregnant. To receive accommodation services due to pregnancy, students must contact Cindy Ference in Student Health, 308-865-8219. The following link provides information for students and faculty regarding pregnancy rights.\footnote{\small  \url{http://www.nwlc.org/resource/pregnant-and-parenting-students-rights-faqs-college-and-graduate-students}}
-
-\paragraph{Reporting Student Sexual Harassment, Sexual Violence or Sexual Assault} Reporting allegations of rape, domestic violence, dating violence, sexual assault, sexual harassment, and stalking enables the University to promptly provide support to the impacted student(s), and to take appropriate action to prevent a recurrence of such sexual misconduct and protect the campus community. Confidentiality will be respected to the greatest degree possible. Any student who believes she or he may be the victim of sexual misconduct is encouraged to report to one or more of the following resources:
-\begin{alphalist}
-\item Local Domestic Violence, Sexual Assault Advocacy Agency \phonenumber[country=US]{3082372599}
-
-\item Campus Police (or Security) \phonenumber[country=US]{3088658911}
-
-\item Title \RomanNumeralCaps{9} Coordinator \phonenumber[country=US]{3088658655}
-
-\end{alphalist}
-Retaliation against the student making the report, whether by students or University employees, will not be tolerated.If you have questions regarding the information in this email please 
-contact Mary Chinnock Petroski, Chief Compliance Officer (
-   \href{mailto:petroskimj@unk.edu}{petroskimj@unk.edu} 
-    or phone \phonenumber[country=US]{3088658400}.
-
-\subsubsection*{University policy on wearing face masks}    
-    All vaccinated faculty, staff and students, as well 
-    as visitors to campus, are encouraged, but not required, 
-    to wear face masks indoors. Unvaccinated individuals 
-    should continue to wear masks. (Masks are required indoors for all 
-    individuals at the University of Nebraska Medical Center.\footnote{\small
-    \url{https://nebraska.edu/news-and-events/news/2021/08/university-of-nebraska-system-updates-covid-19-protocols}}
-
- 
-
-    Consistent with the University of Nebraska’s guiding protocols, there 
-    are circumstances in which many people in our community may not be able to 
-    be vaccinated. Faculty may request, not require, that students wear masks in 
-    class under circumstances that clearly indicate unnecessary yet controllable 
-    risk of infection.  Please note that pandemic precautions are subject to change.
-
-
-
-
-\end{enumerate}
-
-
-
-\end{document}
-
-%------------
-\newpage
-
-\subsubsection*{Course Calendar}
-
-
-Our goal is to cover \S1.1--\S6.2. We will try to adhere to the following schedule,
-but we will modify it if necessary.  Homework is due on the last class day of the week they are scheduled.
-
-
-Regardless of how much material we have covered, \emph{the examinations will almost certainly be given
-on the indicated days.}
-
-\vspace{0.1in}
-
-\begin{tabular} {|r| l | l | l |} 
-\hline
-Week & Week of &  Section(s) & Topic or Exam \\ \hline \hline
-\wk    &  \formatdate{\value{cd}}{\value{cmon}}{\value{cd}} &   \S1.1--1.2 & Logic \hfill  Homework \hw  \\
-\setcounter{cd}{\value{cd}+7}
-
-\wk    &  \formatdate{\value{cd}}{\value{cmon}}{\value{cy}} &   \S1.3--1.4& Logic \hfill  Homework \hw   \\ 
-\setcounter{cd}{\value{cd}+7} \setcounter{cd}{3}  \setcounter{cmon}{\value{cmon}+1}
-
-\wk    &  \formatdate{\value{cd}}{\value{cmon}}{\value{cy}} &    \S1.4--1.5  & Logic \hfill  Homework \hw   \\
-\setcounter{cd}{\value{cd}+7} 
-
-\wk    &  \formatdate{\value{cd}}{\value{cmon}}{\value{cy}}&    \S2.1--2.2  & Sets \hfill  Homework \hw   \\
-\setcounter{cd}{\value{cd}+7} 
-
-\wk    &  \formatdate{\value{cd}}{\value{cmon}}{\value{cy}}&   \S2.3--2.5 & Sets  \hfill    \textbf{Exam} \ex, Friday 21 September \\ \hline 
-\setcounter{cd}{\value{cd}+7} 
-
-\wk    &  \formatdate{\value{cd}}{\value{cmon}}{\value{cy}} &   \S2.6--2.8 & Sets \hfill  Homework \hw   \\
-\setcounter{cmon}{\value{cmon}+1} \setcounter{cd}{1}
-
-
-\wk    & \formatdate{\value{cd}}{\value{cmon}}{\value{cy}}&        \S2.9--2.10  & Sets, Recursion, and Induction  \hfill  Homework \hw \\
-\setcounter{cd}{\value{cd}+7}
-
-\wk    &  \formatdate{\value{cd}}{\value{cmon}}{\value{cy}} &     \S3.1--3.2 & Functions \hfill  Homework \hw   \\
-\setcounter{cd}{\value{cd}+7}
-
-
-\wk    &  \formatdate{\value{cd}}{\value{cmon}}{\value{cy}}&     \S3.3 & Functions  \hfill  Homework \hw   \\ 
-\setcounter{cd}{\value{cd}+7}
-
-\wk  & \formatdate{\value{cd}}{\value{cmon}}{\value{cy}} &      \S4.1--4.2 &  Finite and infinite sets \hfill \textbf{Exam} \ex, Friday 26 October    \\ \hline 
-\setcounter{cd}{\value{cd}+7}
-
-\wk   & \formatdate{\value{cd}}{\value{cmon}}{\value{cy}} &      \S4.3--4.4 &   Finite and infinite sets  \hfill  Homework \hw  \\ 
-\setcounter{cmon}{\value{cmon}+1} \setcounter{cd}{5}
-
-\wk  & \formatdate{\value{cd}}{\value{cmon}}{\value{cy}}&      \S5.1--5.2 &  Combinatorics \hfill  Homework \hw  \\
-\setcounter{cd}{\value{cd}+7}
-
-\wk  & \formatdate{\value{cd}}{\value{cmon}}{\value{cy}}&      \S5.3--5.5 &  Combinatorics \hfill  Homework \hw   \\
-\setcounter{cd}{\value{cd}+7}
-
-\wk   & \formatdate{\value{cd}}{\value{cmon}}{\value{cy}} &      \S5.6--5.8 &   Combinatorics \hfill  Homework \hw  \\ 
-\setcounter{cd}{\value{cd}+7}
-
-\wk   & \formatdate{\value{cd}}{\value{cmon}}{\value{cy}}&      \S6.1  &  Number Theory    \hfill \textbf{Exam} \ex, Friday 30 November   \\
-\setcounter{cmon}{\value{cmon}+1} \setcounter{cd}{3}
-
-\wk   & \formatdate{\value{cd}}{\value{cmon}}{\value{cy}}&      \S6.2  &  Number Theory   \\
-\setcounter{cd}{\value{cd}+7}
-
-\wk   & \formatdate{\value{cd}}{\value{cmon}}{\value{cy}}  &    & \hfill \textbf{Final Exam},  Wednesday  12 December,   13:00--15:00  \\ \hline
-\end{tabular}
-  
-\vfill
-
-%\copyright  \, 2010 Barton Willis
 
 \end{document}
 
