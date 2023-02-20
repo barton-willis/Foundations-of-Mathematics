@@ -6,6 +6,7 @@
 \usepackage{tikz}
 \usepackage{url}
 \usepackage{qrcode}
+\usepackage{centernot}
 %\usetikzlibrary{shapes.geometric}
 %\usetikzlibrary{calc}
 %\usepackage{fourier}
@@ -193,7 +194,7 @@
     \begin{tabular}{|L | L| L | L| L | L|} \hline 
         P & Q & P \land Q & P \lor Q & P \implies Q &  P \equiv Q \\ \hline \hline 
         T & T & T & T & T & T \\
-        T & F & F & T & T & F \\
+        T & F & F & T & F & F \\
         F & T & F & T & T & F \\
         F &  F & F & F & T & T \\ \hline
     \end{tabular}
@@ -208,16 +209,23 @@
     & (P \land  P) \equiv P \\
     & (P \equiv Q) \equiv (Q \equiv P) \\
     &\parens*{P \implies Q} \equiv \parens*{ P \lor \lnot Q}\\
-    &\parens*{P \not \implies Q} \equiv \parens*{ \lnot P \\land  Q}\\
+    &\parens*{P  \centernot\implies  Q} \equiv \parens*{ \lnot P \land  Q}\\
     &\lnot \parens*{P \land Q} \equiv \parens*{\lnot P \lor \lnot Q} \\
     & \parens*{P \implies Q} \equiv \parens*{\lnot Q \implies \lnot P}\\
     & \parens*{P \centernot \implies Q} \equiv \parens*{P \land \lnot Q} \\
     &\parens*{P \iff Q} \equiv \parens*{\parens*{P \implies Q} \land \parens*{Q \implies P}} \\
     &\lnot \parens*{\forall \, x \in A}\parens*{P(x)} \equiv \parens*{\exists \, x \in A}\parens*{\lnot P \parens*{x}}  \\
-    &\lnot \parens*{\exists \, x \in A} \parens*{P \parens*{x}} \equiv \parens*{\forall \, x \in A} \parens*{\lnot P \parens{x}}
+   &\lnot \parens*{\exists \, x \in A} \parens*{P \parens*{x}} \equiv \parens*{\forall \, x \in A} \parens*{\lnot P \parens{x}}
  \end{alignat*}
 \end{minipage}
-
+\begin{minipage}[t]{0.3333\textwidth}
+\section*{Vacuous Truth}
+\begin{alignat*}{1}
+  &\parens*{\forall \, x \in \varnothing}\parens*{P(x)} \equiv \mathrm{True} \\
+   &\parens*{\exists \, x \in \varnothing}\parens*{P(x)} \equiv \mathrm{False} \\
+ \end{alignat*}
+ \end{minipage}
+ 
 \section*{Arithmetic properties}
 \begin{alignat*}{2}
     &\parens*{\forall a,b\in \reals} \parens*{a + b = b + a} & \mbox{commutivity}\\
