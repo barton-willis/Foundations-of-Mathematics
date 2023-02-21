@@ -43,24 +43,31 @@
 \newcommand\AM{{\sc am}}
 \newcommand\PM{{\sc pm}}
      
-\newcommand{\quiz}{4}
+\newcommand{\quiz}{3}
 \newcommand{\term}{Spring}
-\newcommand{\due}{Saturday 25 Febuary at 11:59 \PM}
+\newcommand{\due}{Saturday 11 Febuary at 11:59 \PM}
 \begin{document}
 \large
 \vspace{0.1in}
 \noindent\makebox[3.0truein][l]{{\bf MATH 250}}
 {\bf Name:}  \\
-\noindent \makebox[3.0truein][l]{\bf Homework   \quiz, \term \/ \the\year}
+\noindent \makebox[3.0truein][l]{\bf Homework \quiz, \term \/ \the\year}
 %{\bf Row:}\hrulefill\
 \vspace{0.1in}
+
+\begin{quote}
+ ``Mathematics is common sense.'' \hfill \sc{Errett Bishop} (1928--1983)
+\end{quote}
+Errett Bishop was born in Newton, Kansas and was the son of a Wichita State
+mathematics professor. He is best known for his book \emph{Foundations of Constructive Analysis}.
+Constructive mathematics rejects the Law of excluded middle.
 
 \begin{quote}
     \fbox{I have neither given nor received unauthorized assistance on this assignment.}
     \end{quote}
 \noindent  Homework    \quiz\/  has questions 1 through  \numquestions \/ with 
-a total of  \numpoints\/  points. For this assignment, \emph{neatly handwrite} 
-your work on your own paper, digitize it, and upload it to Canvas.
+a total of  \numpoints\/  points. For this assignment, use Overleaf to 
+complete the assignment and upload the pdf to Canvas.
 
 
 \vspace{0.1in}
@@ -69,59 +76,35 @@ your work on your own paper, digitize it, and upload it to Canvas.
 
 \begin{questions} 
 
-\question [5] Without explicitly using $\lnot$, write the negation of 
+\question [5] Show that for all positive integers $p$ and $q$ that
+$3 q^2 \neq p^2$.  
+
+To do this, use the fact that every positive integer can be
+uniquely expressed in the form $3^e n$, where $e$ is a nonnegative
+integer and $n$ is not divisible by 3. For example, $24 = 3^1 \times 8$
+(and 8 is not divisible by 3); and $963 = 3^2 \times 107$ 
+(and 107 is not divisible by 3). Uniqueness of this representation
+means that
 \begin{equation*}
-    \left(\forall \,\, x \in \reals \right)
-    \left(\exists \,\, y \in \reals \right)
-    \left(|x| < |y| \right).
+  \left[3^e n = 3^{e^\prime} n^\prime \right] \equiv
+  \left[(e = e^\prime) \land (n = n^\prime) \right].
 \end{equation*}
+Equivalently
+\begin{equation*}
+    \left[3^e n \neq  3^{e^\prime} n^\prime \right] \equiv
+    \left[(e \neq e^\prime) \lor (n \neq n^\prime) \right].
+  \end{equation*}
 
 \begin{solution}
 
-    
 \end{solution}
 
-\question[5]  Show that the statement  
+\question [5] For all positive real numbers $x$ and $y$ with $x \neq y$, show that
 \begin{equation*}
-    \left(\forall \,\, x \in \reals \right)
-    \left(\exists \,\, y \in \reals \right)
-    \left(|x| < |y| \right).
+   \frac{x}{y} + \frac{y}{x} > 2.
 \end{equation*}
-is false by showing that its negation is true.
-
-\begin{solution}
-
-    
-\end{solution}
-
-\question [5] Show that the statement
-\begin{equation*}
-    \left(\exists \,\, L \in \reals \right)
-    \left(\exists \,\, m \in \reals \right)
-    \left(\forall \,\, x \in \reals \right)
-    \left(\frac{x+9}{x+11} < L \right)
-\end{equation*}
-is true.
-\begin{solution}
-
-    
-\end{solution}
-
-\question [5]  Given that the statement
-\begin{equation*}
-    \left(\forall \,\, x \in \reals \right)
-    \left(|\sin(x)| \leq 1 \right)
-\end{equation*}
-is true, show that
-\begin{equation*}
-    \left(\exists \,\, m \in \reals \right)
-    \left(\forall \,\, x \in \reals \right)
-    \left(|\sin(x) + x | \leq m |x| \right)
-\end{equation*}
-\begin{solution}
-
-    
-\end{solution}
+To do this, assume that $\frac{x}{y} + \frac{y}{x} \leq   2.$ Use some
+algebra facts to derive a contradiction.
 \end{questions}
 
 

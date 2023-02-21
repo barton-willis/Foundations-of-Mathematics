@@ -43,15 +43,15 @@
 \newcommand\AM{{\sc am}}
 \newcommand\PM{{\sc pm}}
      
-\newcommand{\quiz}{4}
+\newcommand{\quiz}{2}
 \newcommand{\term}{Spring}
-\newcommand{\due}{Saturday 25 Febuary at 11:59 \PM}
+\newcommand{\due}{Saturday 4 Febuary at 11:59 \PM}
 \begin{document}
 \large
 \vspace{0.1in}
 \noindent\makebox[3.0truein][l]{{\bf MATH 250}}
 {\bf Name:}  \\
-\noindent \makebox[3.0truein][l]{\bf Homework   \quiz, \term \/ \the\year}
+\noindent \makebox[3.0truein][l]{\bf Homework \quiz, \term \/ \the\year}
 %{\bf Row:}\hrulefill\
 \vspace{0.1in}
 
@@ -59,8 +59,8 @@
     \fbox{I have neither given nor received unauthorized assistance on this assignment.}
     \end{quote}
 \noindent  Homework    \quiz\/  has questions 1 through  \numquestions \/ with 
-a total of  \numpoints\/  points. For this assignment, \emph{neatly handwrite} 
-your work on your own paper, digitize it, and upload it to Canvas.
+a total of  \numpoints\/  points. For this assignment, use Overleaf to 
+complete the assignment and upload the pdf to Canvas.
 
 
 \vspace{0.1in}
@@ -69,58 +69,63 @@ your work on your own paper, digitize it, and upload it to Canvas.
 
 \begin{questions} 
 
-\question [5] Without explicitly using $\lnot$, write the negation of 
-\begin{equation*}
-    \left(\forall \,\, x \in \reals \right)
-    \left(\exists \,\, y \in \reals \right)
-    \left(|x| < |y| \right).
-\end{equation*}
-
+\question[5] Write the \emph{contrapositive} of the statement
+\begin{quotation}
+    If $x = 1$, then $x^2 = 1$.
+\end{quotation}
 \begin{solution}
 
-    
 \end{solution}
 
-\question[5]  Show that the statement  
-\begin{equation*}
-    \left(\forall \,\, x \in \reals \right)
-    \left(\exists \,\, y \in \reals \right)
-    \left(|x| < |y| \right).
-\end{equation*}
-is false by showing that its negation is true.
-
+\question[5] Write a proof of the statement
+\begin{quotation}
+    If $x = 1$, then $x^2 = 1$.
+\end{quotation}
 \begin{solution}
 
-    
 \end{solution}
 
-\question [5] Show that the statement
-\begin{equation*}
-    \left(\exists \,\, L \in \reals \right)
-    \left(\exists \,\, m \in \reals \right)
-    \left(\forall \,\, x \in \reals \right)
-    \left(\frac{x+9}{x+11} < L \right)
-\end{equation*}
-is true.
+\question[5] Write the \emph{converse} of the statement
+\begin{quotation}
+    If $x = 1$, then $x^2 = 1$.
+\end{quotation}
 \begin{solution}
 
-    
 \end{solution}
 
-\question [5]  Given that the statement
-\begin{equation*}
-    \left(\forall \,\, x \in \reals \right)
-    \left(|\sin(x)| \leq 1 \right)
-\end{equation*}
-is true, show that
-\begin{equation*}
-    \left(\exists \,\, m \in \reals \right)
-    \left(\forall \,\, x \in \reals \right)
-    \left(|\sin(x) + x | \leq m |x| \right)
-\end{equation*}
+\question[5]  Show that the statement
+\begin{quotation}
+    If $x^2 = 1$, then $x = 1$.
+\end{quotation}
+is false. To do this, find a specific number $x$ that makes the
+statement false.
 \begin{solution}
 
-    
+\end{solution}
+
+\question Show that $(P \implies Q) \implies (Q \implies P)$ is not 
+a tautology. To do this find one example of truth values for $P$ 
+and $Q$ that make $(P \implies Q) \implies (Q \implies P)$ false.
+\begin{solution}
+
+\end{solution}
+
+\question[5]  Show that $(P \equiv Q) \equiv \left ( (P \implies Q) 
+\land (Q \implies P) \right )$ is a tautology. Do this by completing
+the truth table
+
+\begin{solution}
+
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        $P$ & $Q$ & $P \equiv Q$ & $P \implies Q$ & $Q \implies P$ & $(P \implies Q) 
+        \land (Q \implies P)$ \\ \hline \hline
+        T & T &  &  & & \\ \hline
+        T & F &  &  & & \\ \hline 
+        F & T &  &  & & \\ \hline 
+        F & F &  &  & & \\ \hline        
+    \end{tabular}
+
 \end{solution}
 \end{questions}
 
