@@ -43,9 +43,9 @@
 \newcommand\AM{{\sc am}}
 \newcommand\PM{{\sc pm}}
      
-\newcommand{\quiz}{4}
+\newcommand{\quiz}{5}
 \newcommand{\term}{Spring}
-\newcommand{\due}{Saturday 25 Febuary at 11:59 \PM}
+\newcommand{\due}{Saturday 11 March at 11:59 \PM}
 \begin{document}
 \large
 \vspace{0.1in}
@@ -56,11 +56,17 @@
 \vspace{0.1in}
 
 \begin{quote}
-    \fbox{I have neither given nor received unauthorized assistance on this assignment.}
+    “To learn, one must be humble. But life is the great teacher.”
+    \hfill{\sc James Joyce}
+\end{quote}
+\begin{quote}
+      \fbox{I have neither given nor received unauthorized assistance on this assignment.}
     \end{quote}
+\normalsize
 \noindent  Homework    \quiz\/  has questions 1 through  \numquestions \/ with 
 a total of  \numpoints\/  points. For this assignment, \emph{neatly handwrite} 
 your work on your own paper, digitize it, and upload it to Canvas.
+This assignment is due  \due.
 
 
 \vspace{0.1in}
@@ -69,59 +75,49 @@ your work on your own paper, digitize it, and upload it to Canvas.
 
 \begin{questions} 
 
-\question [5] Without explicitly using $\lnot$, write the negation of 
-\begin{equation*}
-    \left(\forall \,\, x \in \reals \right)
-    \left(\exists \,\, y \in \reals \right)
-    \left(|x| < |y| \right).
-\end{equation*}
+\question [1] Show that $\{(2,3)\}$ is a transitive relation on $\integers$.
 
-\begin{solution}
 
+\question [1] Show that $\{(1,3), (3,4), (1,4)\}$ is a transitive relation on $\integers$.
+
+\question [1] Give an example of a set $A$ and transitive relations
+$R$ and $R^\prime$ on $A$ such that $R \cup R^\prime$ is not 
+a transitive relation on $A$. (Hint: An example is hiding in plain sight.)
+
+\question On the set $\reals$, define a relation $\{(a,b) \in \reals \times \reals \mid a \neq b \}$.
+
+\begin{parts} 
     
-\end{solution}
+    \part [1] Is this relation \emph{reflexive}? If so, prove it;
+    if not, give an example that shows that it is not reflexive.
 
-\question[5]  Show that the statement  
+    \part [1] Is this relation \emph{symmetric}? If so, prove it;
+        if not, give an example that shows that it is not symmetric.
+
+    \part [1] Is this relation \emph{transitive}? If so, prove it;
+        if not, give an example that shows that it is not transitive.
+
+\end{parts}
+
+\question [1] Let $F$ be the set of all real valued functions from $\reals$ to 
+$\reals$. Define a relation $E$ on $F$ as 
 \begin{equation*}
-    \left(\forall \,\, x \in \reals \right)
-    \left(\exists \,\, y \in \reals \right)
-    \left(|x| < |y| \right).
+    E = \{(f,g) \mid f - g \mbox{ is a constant function} \}.
 \end{equation*}
-is true.
+If $E$ is an equivalence relation on $F$, prove it; if not, 
+give an example that shows that it is not an equivalence relation.
 
-\begin{solution}
+To say that a function $f$ is constant means
+\(
+     \left(\exists \,\,  C \in \reals \right)
+     \left(\forall \,\, x \in \reals \right)
+     \left(f(x) = C \right)
+\).
 
-    
-\end{solution}
-
-\question [5] Show that the statement
-\begin{equation*}
-    \left(\exists \,\, L \in \reals \right)
-    \left(\forall \,\, x \in \reals_{>0} \right)
-    \left(\frac{x+9}{x+11} < L \right)
-\end{equation*}
-is true.
-\begin{solution}
-
-    
-\end{solution}
-
-\question [5]  Given that the statement
-\begin{equation*}
-    \left(\forall \,\, x \in \reals \right)
-    \left(|\sin(x)| \leq 1 \right)
-\end{equation*}
-is true, show that
-\begin{equation*}
-    \left(\exists \,\, m \in \reals \right)
-    \left(\forall \,\, x \in \reals \right)
-    \left(|\sin(x) + x | \leq m |x| \right)
-\end{equation*}
-\begin{solution}
-
-    
-\end{solution}
 \end{questions}
+
+
+
 
 
 
