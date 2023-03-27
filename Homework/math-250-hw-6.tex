@@ -1,0 +1,138 @@
+\documentclass[12pt,fleqn,answers]{exam}
+\usepackage{pifont}
+\usepackage{dingbat}
+\usepackage{amsmath,amssymb}
+\usepackage{epsfig}
+\usepackage[]{hyperref}
+\usepackage{geometry}
+\geometry{letterpaper, margin=0.75in}
+\addpoints
+\boxedpoints
+\pointsinmargin
+\pointname{pts}
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage[american]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage{isomath}
+\usepackage{upgreek,amsmath}
+\usepackage{amssymb}
+
+\newcommand{\dotprod}{\, {\scriptzcriptztyle
+    \stackrel{\bullet}{{}}}\,}
+
+\newcommand{\reals}{\mathbf{R}}
+\newcommand{\lub}{\mathrm{lub}} 
+\newcommand{\glb}{\mathrm{glb}} 
+\newcommand{\complex}{\mathbf{C}}
+\newcommand{\dom}{\mbox{dom}}
+\newcommand{\cover}{{\mathcal C}}
+\newcommand{\integers}{\mathbf{Z}}
+\newcommand{\vi}{\, \mathbf{i}}
+\newcommand{\vj}{\, \mathbf{j}}
+\newcommand{\vk}{\, \mathbf{k}}
+\newcommand{\bi}{\, \mathbf{i}}
+\newcommand{\bj}{\, \mathbf{j}}
+\newcommand{\bk}{\, \mathbf{k}}
+\DeclareMathOperator{\Arg}{\mathrm{Arg}}
+\DeclareMathOperator{\Ln}{\mathrm{Ln}}
+\newcommand{\imag}{\, \mathrm{i}}
+
+%\DeclareMathOperator{\dom}{\mathrm{dom}}
+\DeclareMathOperator{\range}{\mathrm{range}}
+\usepackage{graphicx}
+\newcommand\AM{{\sc am}}
+\newcommand\PM{{\sc pm}}
+     
+\newcommand{\quiz}{7}
+\newcommand{\term}{Spring}
+\newcommand{\due}{Saturday 1 April at 11:59 \PM}
+\begin{document}
+\large
+\vspace{0.1in}
+\noindent\makebox[3.0truein][l]{{\bf MATH 250}}
+{\bf Name:}  \\
+\noindent \makebox[3.0truein][l]{\bf Homework \quiz, \term \/ \the\year}
+%{\bf Row:}\hrulefill\
+\vspace{0.1in}
+
+\begin{quote}
+    “To learn, one must be humble. But life is the great teacher.”
+    \hfill{\sc James Joyce}
+\end{quote}
+\begin{quote}
+      \fbox{I have neither given nor received unauthorized assistance on this assignment.}
+    \end{quote}
+
+\noindent  Homework    \quiz\/  has questions 1 through  \numquestions \/ with 
+a total of  \numpoints\/  points. For this assignment, \emph{neatly hand write} 
+your work on your own paper, digitize it, and upload it to Canvas.
+This assignment is due  \due.
+
+
+\vspace{0.1in}
+
+%\noindent{\textbf{Link to your Overleaf work: }}\url{XXX}
+
+\begin{questions} 
+
+\question Let $A$ and $B$ be subsets of $\reals$. Any function
+from $A$ to $B$ is called a \emph{real valued function of one real variable}.
+For any two such functions $F$ and $G$, define
+\begin{align*}
+&F+G = x \in \dom(F) \cap \dom(G) \mapsto F(x) + G(x),\\
+&F G = x \in \dom(F) \cap \dom(G) \mapsto F(x)  G(x),\\
+&\frac{F}{G} = x \in \dom(F) \cap \dom(G) \setminus 
+\{x \in \reals | G(x) = 0 \} \mapsto \frac{F(x)}{G(x)}.
+\end{align*}
+
+\begin{parts}
+\part[10] Find an example of two \emph{real valued functions of one real variable} 
+$F$ and $G$ such that both $F$ and $G$ are one-to-one, but $F+G$ is not 
+one-to-one. Justify your example.
+
+\part[10] Find an example of two \emph{real valued functions of one real variable} $F$ and $G$ such that both $F$ and $G$ are one-to-one, but $F G$ is not 
+one-to-one. Justify your example.
+
+\part[10] Define $F = x \in \reals_{\neq 0} \mapsto x + \frac{1}{x}$. Find
+\(\dom(1/F)\).
+
+\end{parts}
+
+
+
+\question On the set $\reals$ define the equivalence relation $(x \sim y) \equiv
+\sin(x) = \sin(y)$. Give an explicit representation for the equivalence class $[1/2]$.
+(Okay--the set $[1/2]$ has infinitely many members, so no, you can't list all the
+members, but you can express the set $[1/2]$ in set builder notation.)
+
+
+\question Define $\Phi = k \in \integers \mapsto \begin{cases} 2k & k \leq 0 \\
+    2 k + 1 & k > 0 \end{cases}$.
+
+
+\begin{parts}
+
+\part [10] Is $\Phi$ one-to-one?  If so, prove it; if not, prove that too.
+
+\part [10] Find  $\range(\Phi)$.
+
+\end{parts}
+
+\question The prime factorization of an integer is unique. On consequence of this is that
+if $2^k \times 3^\ell = 2^{k^\prime} \times 3^{\ell^\prime}$, where $k,\ell, k$, and
+$k^\prime$ are non negative integers, then $k=k^\prime$ and $\ell = \ell^\prime$.
+Define a function \(\Psi = (k,n) \in \integers_{\geq 0} \times \integers_{\geq 0} 
+\mapsto 2^k 3^n$.
+
+\begin{parts}
+
+    \part [10] Show that the function $\Psi$ is one-to-one.
+
+    \part [10] Show that $\range(\Psi) \neq \integers_{\geq 0}$
+\end{parts}
+
+\end{questions}
+
+\end{document}
