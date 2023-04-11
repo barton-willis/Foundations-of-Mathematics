@@ -1,0 +1,104 @@
+\documentclass[12pt,fleqn,answers]{exam}
+\usepackage{pifont}
+\usepackage{dingbat}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\geometry{letterpaper, margin=0.5in}
+\addpoints
+\boxedpoints
+\pointsinmargin
+\pointname{pts}
+
+\usepackage[final]{microtype}
+\usepackage[american]{babel}
+\usepackage{fourier}
+\usepackage{isomath}
+\usepackage{upgreek}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\newcommand{\reals}{\mathbf{R}}
+\newcommand{\integers}{\mathbf{Z}}
+\DeclareMathOperator{\dom}{\mathrm{dom}}
+\DeclareMathOperator{\range}{\mathrm{range}}
+
+     
+\newcommand{\quiz}{8}
+\newcommand{\term}{Spring}
+\newcommand{\due}{Saturday 8 April at 11:59 pm}
+\begin{document}
+\large
+\vspace{0.1in}
+\noindent\makebox[3.0truein][l]{ \textbf{MATH 250}}
+{\bf Name:}  \\
+\noindent \makebox[3.0truein][l]{\textbf{Homework \quiz, \term \/ \the\year}}
+%{\bf Row:}\hrulefill\
+\vspace{0.1in}
+
+\begin{quote}
+   % “To learn, one must be humble. But life is the great teacher.”
+   % \hfill{\sc James Joyce}
+    The more I read, the more I acquire, the more certain I am that 
+    I know \mbox{nothing.} \hfill{\sc François-Marie Arouet}
+\end{quote}
+\begin{quote}
+      \fbox{I have neither given nor received unauthorized assistance on this assignment.}
+    \end{quote}
+
+\noindent  Homework    \quiz\/  has questions 1 through  \numquestions \/ with 
+a total of  \numpoints\/  points. For this assignment, \textbf{use Overleaf 
+to typeset your work and upload a pdf to Canvas.} The assignment is due \due.
+\vspace{0.1in}
+
+%\noindent{\textbf{Link to your Overleaf work: }}\url{XXX}
+
+\begin{questions} 
+
+\question [10] Let $A,B$, and $C$ be countable sets. Show that $A \times B \times C$
+is countable.  Remember that  $A \times B \times C$ is the set of three-tuples; specifically
+\begin{equation*}
+    A \times B \times C = \{(a,b,c) \,\,| \,\, a \in A, b \in B, c \in C \}.
+\end{equation*}
+\textbf{Hint} You need to find $\Phi \in A \times B \times C \to \integers_{\geq 0}$
+that is one-to-one. But you do \emph{not} need to make $\Phi$ onto. 
+
+\question [10]  Let $A$ and $B$ be nonempty finite sets. Show that $A \setminus B$ 
+is finite. (The sets needn't be nonempty, but assuming they are both
+nonempty eliminates two special cases.)
+\begin{solution}
+
+\end{solution}
+\question [10] Let $A$ and $B$ be nonempty finite sets. Show that $A \cup B$ 
+is finite. (Again, the sets needn't be nonempty.)
+\begin{solution}
+
+\end{solution}
+    
+
+\textbf{Hints} There is $M \in \integers_{\geq 1}$ and a 
+bijection $\Phi \in A \to 1 \dots M$. Similarly, there is 
+$N \in \integers_{\geq 1}$ and a bijection $\Psi \in B \to 1 \dots N$.
+For some integer $L$, you need to define a bijection from $A \cup B$ 
+to $ 1 \dots L$. If $A$ and $B$ were disjoint, you 
+could define 
+\begin{equation*}
+  \Omega = x \in A \cup B \mapsto 
+   \begin{cases} 
+      \Phi(x) & x \in A \\
+      \Psi(x) + M & x \in B
+   \end{cases}.
+\end{equation*}
+Then $\Omega$ is a bijection from $A \cup B$ to $1 \dots M + N$.
+But this doesn't work if $A \cap B \neq \varnothing$. Actually
+when $A$ and $B$ aren't disjoint, $ \Omega$ isn't a function--if
+$w \in A \cap B$, what's the value of $\Omega(w)$? 
+But the definition of $\Omega$ can be tweaked to make 
+$\Omega$ a bijection.
+
+\begin{solution}
+
+\end{solution}
+
+\end{questions}
+
+\end{document}
