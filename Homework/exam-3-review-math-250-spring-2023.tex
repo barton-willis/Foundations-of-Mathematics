@@ -1,0 +1,131 @@
+\documentclass[12pt,fleqn]{exam}
+\usepackage{pifont,bbding,url}
+\usepackage{dingbat}
+\usepackage{amsmath}
+\usepackage{centernot}
+\usepackage{fleqn}
+\usepackage{epsfig}
+\usepackage{pdfpages}
+\usepackage{fourier} %{mathptm}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage{xcolor}
+\usepackage{enumerate}
+
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\parens}{\lparen}{\rparen}
+\newcommand{\dom}{\mathrm{dom}}
+\newcommand{\range}{\mathrm{range}}
+\usepackage{amssymb, enumerate}
+\shadedsolutions
+%\definecolor{SolutionColor}{rgb}{0.9,1,1}
+\definecolor{SolutionColor}{rgb}{1,1,0.7}
+\addpoints
+\boxedpoints
+\pointsinmargin
+\pointname{pts}
+
+\newcommand{\dotprod}{\, {\scriptzcriptztyle \stackrel{\bullet}{{}}}\,}
+\begin{document}
+
+\newcommand{\reals}{\mathbf{R}}
+\newcommand{\integers}{\mathbf{Z}}
+\newcommand{\bi}{\mathbf{i}}
+\newcommand{\bj}{\mathbf{j}}
+\newcommand{\bk}{mathbf{k}}
+
+\newcommand{\Mod}[1]{\ \mathrm{mod}\ #1}
+\newcommand{\card}{\ \mathrm{card}}
+
+\newcommand{\ex}{III}
+\newenvironment{alphalist}{
+  \begin{enumerate}[(a)]
+    \addtolength{\itemsep}{-1.0\itemsep}}
+  {\end{enumerate}}
+
+\newenvironment{handlist}{
+  \begin{enumerate}[\leftthumbsup]
+    \addtolength{\itemsep}{-1.0\itemsep}}
+  {\end{enumerate}}
+
+\large
+\vspace{0.1in}
+\noindent\makebox[3.0truein][l]{{\bf MATH 250}}
+{\bf Name:}\hrulefill\
+\noindent \makebox[3.0truein][l]{\bf Review for Exam \ex}
+{\bf Row:}\hrulefill\
+
+\large
+
+\vspace{0.1in}
+
+\noindent Exam \ex\/  has questions 1 through  \numquestions \/ with a total of \numpoints \/ points.  This exam is printed on both sides of the paper.
+
+\begin{questions}
+
+\question From a litter of eight border collies, how many subsets of puppies with cardinality four are there?  Explain.
+
+ \question A five digit integer has the form $d_1 d_2 d_3 d_4 d5$,
+    where $d_1, d_2 \dots, d_5 \in \{0,1,2,3,4,5,6,7,8,9\}$ and $d_1 \neq 0$.  
+      In each of the following cases, determine the number of five digit integers 
+    that satisfy the given condition. 
+    \textbf{Clearly explain your work with a few sentences.}
+
+    \begin{parts}
+      \part [2] No additional restrictions on the digits.
+ 
+      \begin{solution}
+
+
+
+      \end{solution}
+      
+      
+        
+       \part [2] There are no repeated digits. 
+      \begin{solution}
+
+      \end{solution}
+
+\end{parts}
+
+\question [10] Let $A,B$ and $C$ be finite sets. Given that $\card(A) = 46, \card(B) = 107$, and $\card(A \cap B) = 12$, find
+$\card(A \cup B)$.
+\begin{solution}%[3.0in]
+\end{solution}
+
+\newpage
+
+\question [10] Find a bijection from $[0,1]$  to $[-1,1]$.
+\begin{solution}%[3.0in]
+\end{solution}
+
+\newpage
+
+\question [10] Show that the set $\integers$ is countable. To do this, you must construct a one-to-one function from $\integers$ to $\integers_{\geq 0}$.
+
+\begin{solution}%[3.0in]
+\end{solution}
+
+\newpage
+
+
+
+\newpage
+
+\question [10]  A recursive definition of a sequence $F$ is
+\(
+  F_n = \begin{cases} 1  & \mbox{if } n = 0 \\ \frac{1}{4} F_{n-1} + \frac{3n+1}{4}  &\mbox{if } n \in \integers_{\geq 1} \end{cases}.
+\)
+Use induction to show that
+\(
+   \left(\forall n \in \integers_{\geq 0}\right) \left(F_n =  n + \frac{1}{4^n}  \right).
+\)
+
+\newpage
+
+\question [10]  Let $A$ and $B$ be countable sets. Show that $A \cup B$ is countable.
+\end{questions}
+%\includepdf[pages={1-}]{cheat_sheet.pdf}     
+\end{document}
