@@ -1,0 +1,148 @@
+\documentclass[12pt,fleqn,answers]{exam}
+\usepackage{pifont}
+\usepackage{dingbat}
+\usepackage{amsmath,amssymb}
+\usepackage{epsfig}
+\usepackage[]{hyperref}
+\usepackage{geometry}
+\geometry{letterpaper, margin=0.75in}
+\addpoints
+\boxedpoints
+\pointsinmargin
+\pointname{pts}
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,factor=1100,stretch=10,shrink=10]{microtype}
+\usepackage[american]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage{isomath}
+\usepackage{upgreek,amsmath}
+\usepackage{amssymb}
+\usepackage[super]{nth}
+
+\newcommand{\dotprod}{\, {\scriptzcriptztyle
+    \stackrel{\bullet}{{}}}\,}
+
+\newcommand{\reals}{\mathbf{R}}
+\newcommand{\lub}{\mathrm{lub}} 
+\newcommand{\glb}{\mathrm{glb}} 
+\newcommand{\complex}{\mathbf{C}}
+\newcommand{\dom}{\mbox{dom}}
+\newcommand{\cover}{{\mathcal C}}
+\newcommand{\integers}{\mathbf{Z}}
+\newcommand{\vi}{\, \mathbf{i}}
+\newcommand{\vj}{\, \mathbf{j}}
+\newcommand{\vk}{\, \mathbf{k}}
+\newcommand{\bi}{\, \mathbf{i}}
+\newcommand{\bj}{\, \mathbf{j}}
+\newcommand{\bk}{\, \mathbf{k}}
+\DeclareMathOperator{\Arg}{\mathrm{Arg}}
+\DeclareMathOperator{\Ln}{\mathrm{Ln}}
+\newcommand{\imag}{\, \mathrm{i}}
+
+%\DeclareMathOperator{\dom}{\mathrm{dom}}
+\DeclareMathOperator{\range}{\mathrm{range}}
+\usepackage{graphicx}
+\newcommand\AM{{\sc am}}
+\newcommand\PM{{\sc pm}}
+     
+\newcommand{\quiz}{9}
+\newcommand{\term}{Spring}
+\newcommand{\due}{Saturday 29 April at 11:59 \PM}
+\begin{document}
+\large
+\vspace{0.1in}
+\noindent\makebox[3.0truein][l]{{\bf MATH 250}}
+{\bf Name:}  \\
+\noindent \makebox[3.0truein][l]{\bf Homework, \term \/ \the\year}
+%{\bf Row:}\hrulefill\
+\vspace{0.1in}
+
+\begin{flushleft}
+  \emph{
+    “Money buys everything except love, personality, freedom, immortality, silence, peace.”}
+    \hfill \sc{Carl Sandburg}
+ \end{flushleft}
+
+%\begin{quote}
+  %    \fbox{I have neither given nor received unauthorized assistance on this assignment.}
+  %  \end{quote}
+
+\noindent  This homework   /  has questions 1 through  \numquestions \/ with 
+a total of  \numpoints\/  points. For this assignment, neatly hand write your solutions, digitize your work, and turn it into Canvas. It is \due.
+
+By the way:  This homework is based on a homework problem from the book \emph{Abstract Algebra}, by I.N. Herstein that I was
+assigned as an undergraduate.  This book is still in print---the \nth{3} edition can be purchased from the retailer Target with a suggested age of  22 years and up.
+
+ When I worked this homework assignment, I marveled over the  function $\otimes$ and thought it was quite mysterious and \emph{pined} to  know how such a crazy example  could be invented. But I was too pusillanimous to ask my professor Dr.\  Dressler\footnote{He  is possibly best known for 
+ the conjecture that between any two positive integers having the same prime factors there is a prime.  For example, there must be 
+ a prime between $5 \times 7 \times 107$ and $5^2\times 7 \times 107$.  Actually there are lots of them, for example 3761 is prime
+ and $5 \times 7 \times 107 < 3761 < 5^2\times 7 \times 107$.  I'm not sure if his conjecture has been resolved.
+ 
+ I'm pretty sure that Dr.\ Dressler didn't have
+ much appreciation for applications of mathematics. He once told me that the problems in differential equations could be mostly eliminated
+ by simply giving names to more functions.  What's the solution to the DE $y^{\prime\prime} = x^5 + x^3$.  No problem, the solution
+ is $y= \mbox{Larry}(x)$; what's the solution to the DE $y^{\prime\prime} =  x + \cos(x)$.  No problem, the solution
+ is $y= \mbox{George}(x)$.  In one of his books, Nobel Laureate Richard Feynman explains how his father taught him the 
+  difference between \emph{understanding} something  and \emph{naming} it.  Maybe Dr.\  Dressler disagreed with Richard Feynman, or maybe he wasn't serious, I don't know. }
+for an explanation on how might one invent such a crazy example.
+
+I'm not sure when I learned the trick behind this function, but it is based on the associativity of function composition. Knowing 
+the trick allows for constructing other examples of an associative and commutative function defined on pairs of n-tuples.  The particular
+function in this problem defines what is known as hyperbolic numbers or perplex numbers.\footnote{The 1972 publication HAKMEM, also known as AI Memo 239, 
+has a description of the trick that can be used to invent this example.}
+
+\vspace{0.1in}
+
+%\noindent{\textbf{Link to your Overleaf work: }}\url{XXX}
+
+\begin{questions} 
+
+\question Define a function $\otimes$ by
+\begin{equation*}
+   \otimes = \left  ((a,b), (c,d) \right) \in \reals^2 \times \reals^2  \mapsto
+      (ac + bd, ad + bc) \in \reals^2.
+\end{equation*}
+The input to  $\otimes$  is an ordered pair of ordered pairs and the output is an ordered pair. Yikes!  Maybe an example
+will help clarify.  Using infix notation, we have, for example,
+\begin{align*}
+  (1,2) \otimes (3,4) &= (1 \times 3 + 2 \times 4, 1 \times 4 + 2 \times 3)
+                       = (11,10). \\
+  (1,2) \otimes (1,0) &= (1 \times 1 + 2 \times 0, 1 \times 0 + 2 \times 1)
+                       = (1,2).                      
+\end{align*}
+
+\begin{parts}
+
+    \part [5] Show that $\otimes$ is commutative. That is, show that
+    \begin{equation*}
+        \left(\forall a,b,c,d \in \reals\right)
+         \left((a,b) \otimes (c,d) = (c,d) \otimes (a,b) \right).
+    \end{equation*}
+
+     \part [5] Show that $\otimes$ is associative. That is, show that
+     \begin{equation*}
+        \left(\forall a,b,c,d,e,f \in \reals\right)
+         \left((a,b) \otimes ((c,d) \otimes (e,f)) = 
+         ((a,b) \otimes (c,d)) \otimes (e,f)  \right).
+     \end{equation*}
+
+    \part [5] Find $(x,y) \in \reals^2$ such that
+    $
+       \left(\forall a,b \in \reals\right)\left((a,b) \otimes (x,y)
+         = (a,b)\right).
+    $
+    You have found the (and I mean the) identity element for $\otimes$.
+
+    \part [5] Show that the solution set to 
+    $(1,-1) \otimes (x,y) = (1,0)$ is empty.
+
+
+    
+    \part [5] Does the set $\reals^2$ along with the function $\otimes$ form a group?  Explain. 
+\end{parts}
+    
+
+\end{questions}
+
+\end{document}
